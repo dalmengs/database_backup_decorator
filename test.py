@@ -9,7 +9,6 @@ test_data = {
 }
 
 async def async_succeed_test():
-    global data
     try:
         result = await Backup(
             backup_data={
@@ -28,7 +27,6 @@ async def async_succeed_test():
     print("Test Succeed")
 
 async def async_failed_test():
-    global data
     try:
         result = await Backup(
             backup_data={
@@ -47,7 +45,6 @@ async def async_failed_test():
     print("Test Succeed")
 
 async def succeed_test():
-    global data
     try:
         result = await Backup(
             backup_data={
@@ -66,7 +63,6 @@ async def succeed_test():
     print("Test Succeed")
 
 async def failed_test():
-    global data
     try:
         result = await Backup(
             backup_data={
